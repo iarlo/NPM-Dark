@@ -7,7 +7,7 @@ Inspired by [Github Dark](https://github.com/StylishThemes/GitHub-Dark)
 ## Installation
 
 1. Install [Stylus for Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/) or [Safari](https://cascadea.app/).
-2. Install [npmjs-app-dark-mode.user.css](https://gist.github.com/iarlo/4ba560a256b1a572ea84e91e9ec7a44f/raw/1fbe2ea683fa4d5ecce047e248ee65509ce9f848/npmjs-app-dark-mode.user.css)
+2. Install [npmjs-app-dark-mode.user.css](https://raw.githubusercontent.com/iarlo/NPM-Dark/master/npmjs-dark-mode.user.css)
 
 ## Preview
 
