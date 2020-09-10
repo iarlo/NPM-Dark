@@ -1,4 +1,3 @@
-# NPM-Dark
 <div style="text-align:center"><img src="https://github.com/iarlo/NPM-Dark/blob/master/preview/logo.png" /></div>
 <div style="text-align:center">The best dark theme for the NPM</div>
 
