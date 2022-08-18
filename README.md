@@ -10,8 +10,6 @@ Inspired by [Github Dark](https://github.com/StylishThemes/GitHub-Dark)
 
 ## Preview
 
-![alt Preview 1](https://github.com/iarlo/NPM-Dark/blob/master/preview/npm-dark-1.png "Preview 1")
+![alt Preview 1](https://github.com/iarlo/NPM-Dark/blob/master/preview/npm-dark.png "Preview 1")
 #
-![alt Preview 2](https://github.com/iarlo/NPM-Dark/blob/master/preview/npm-dark-2.png "Preview 2")
-#
-![alt Preview 3](https://github.com/iarlo/NPM-Dark/blob/master/preview/npm-dark-3.png "Preview 3")
+
