@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           NPM Dark
 @namespace      github.com/iarlo
-@version        2.0.0
+@version        3.0.0
 @license     MIT
 @homepageURL https://github.com/iarlo/NPM-Dark
 @author         Bruno Sá (@iarlo)
@@ -37,18 +37,27 @@
     html {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
-        background-color: var(--background)
+        box-sizing: border-box!important;
+        background-color: var(--background)!important;
+        color-scheme: dark!important;
+        color: var(--secundary)
     }
+    #___gatsby,
+    #skip-nav > div.Box-nv15kw-0.layout___StyledBox3-sc-1qhwq3g-5.embKIi.cdcKmh *,
+    ._1066d9e7,
     ._38ce9a85[aria-selected=true] span,
     ._38ce9a85[aria-selected=true] svg,
     ._38ce9a85[aria-selected=true] svg > path,
     ._4a3f8f21 svg,
+    ._75ce47e7 header,
     ._8055e658:hover,
     .black,
     .c37751f6 svg,
     .markdown .highlight pre span,
     h2 span,
+    header ._705cdf4f,
+    header ._79c95847,
+    header a,
     li:hover #package-tab-dependencies,
     li:hover #package-tab-dependencies span,
     li:hover #package-tab-dependencies svg,
@@ -61,10 +70,12 @@
     li:hover #package-tab-readme svg,
     li:hover #package-tab-versions span,
     li:hover #package-tab-versions svg,
+    li > a[role=menuitem],
     main#main section *,
     strong {
-        background-color: transparent
+        background-color: transparent!important
     }
+    ,
     ._0b9b6c57 a,
     ._0edb515f,
     ._390acbc5,
@@ -84,20 +95,32 @@
     .cd2827bb a,
     .d70fa54a,
     .dib.fr.mt2 a,
+    [role=tabpanel] button,
     body,
     h2 {
-        color: var(--secundary)
+        color: var(--secundary)!important
+    }
+    pre {
+        margin: 1em 0!important
     }
     .black,
+    .fDilpz.active,
+    .kFHbfK.active,
+    .markdown strong,
+    .yqOwb.active,
     h2 span,
     strong {
         color: #fff
     }
+    #packages > span._57e26c3d.black-90.tracked-tight.fw6.mr2,
     ._24a1e9c7,
     ._4a3f8f21,
     ._4a3f8f21 span,
     .c37751f6,
-    .c37751f6 span {
+    .c37751f6 span,
+    .nav-items__SecondLevelLink-sc-kh2ci9-2,
+    a.active,
+    h2 {
         color: var(--primary)!important
     }
     ._24a1e9c7 {
@@ -141,11 +164,6 @@
     .d767adf4 span,
     .dde91b96 {
         border: var(--border)!important
-    }
-    ._1066d9e7,
-    ._75ce47e7 header,
-    header ._705cdf4f {
-        background-color: transparent!important
     }
     ._2f299eeb,
     ._75ce47e7 {
@@ -267,7 +285,7 @@
         border-color: var(--hover);
         transition: .3s
     }
-    @media (max-width: 60em) {
+    @media (max-width:60em) {
         ._4a3f8f21 {
             margin-right: -8px
         }
@@ -277,7 +295,7 @@
             border-bottom-right-radius: 5px
         }
     }
-    @media screen and (min-width: 60em) {
+    @media screen and (min-width:60em) {
         ._8055e658 {
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
@@ -295,12 +313,18 @@
     }
     main svg :not(.sparkline--fill):not(.sparkline--line) {
         fill: var(--secundary);
-        background-color: transparent
+        background-color: transparent!important
     }
     ._59b94eb6::before {
         border-bottom: 18px solid rgba(255, 255, 255, .1)!important
     }
-    .b--black-10 {
+    #gatsby-focus-wrapper > div > div > div.Box-nv15kw-0.Flex-arghxi-0.iUtsKT > div.Box-nv15kw-0.iiMOdu > div > div,
+    #gatsby-focus-wrapper > div > div > div.Box-nv15kw-0.Flex-arghxi-0.iUtsKT > div.Box-nv15kw-0.iiMOdu > div > div [role=listitem],
+    #gatsby-focus-wrapper > div > div > div.Box-nv15kw-0.Position-fla1y3-0.embKIi.fDNwWQ > div.Box-nv15kw-0.Flex-arghxi-0.RBCrZ > div.Box-nv15kw-0.Flex-arghxi-0.gVbUqq > div.Box-nv15kw-0.Flex-arghxi-0.hluPoi > button:nth-child(3) > div:nth-child(2) > div.Box-nv15kw-0.Position-fla1y3-0.gAPSyw.geRYAT [role=listitem],
+    .b--black-10,
+    .upaKV td,
+    .upaKV th,
+    header ._0da775bb {
         border-color: rgba(255, 255, 255, .1)!important
     }
     .black-50 {
@@ -320,9 +344,13 @@
     .markdown code {
         color: var(--secundary)!important
     }
-    .markdown {
-        margin: 0;
+    .markdown,
+    .markdown h3,
+    .markdown h5 {
         color: var(--primary)
+    }
+    .markdown {
+        margin: 0
     }
     .markdown .storage {
         color: #ff69b4!important
@@ -363,23 +391,19 @@
         border-bottom: 1px solid rgba(255, 255, 255, .1)!important;
         border-radius: 6px
     }
-    .markdown strong {
-        color: #fff
-    }
     .markdown h2,
     .markdown h4,
     .markdown > h1 {
         color: var(--primary);
         border-bottom: 1px solid #343434
     }
-    .markdown h3,
-    .markdown h5 {
-        color: var(--primary)
-    }
+    #footer *,
+    #tabpanel-packages > div > ul *,
     .markdown .highlight,
     .markdown li,
-    .markdown p {
-        color: var(--secundary);
+    .markdown p,
+    header * {
+        color: var(--secundary)!important;
         background-color: transparent
     }
     .markdown th {
@@ -442,22 +466,12 @@
     footer a[title="npm repository"] > svg > polygon {
         fill: var(--card)
     }
-}
-.hmqUJT,
-.upaKV td,
-.upaKV th {
-    background-color: #141414!important
-}
-.fDevHB,
-.icJRWX {
-    color: #c6c6c6
-}
-.upaKV td,
-.upaKV th {
-    border-color: rgba(255, 255, 255, .1)!important
-}
-.fDilpz.active,
-.kFHbfK.active,
-.yqOwb.active {
-    color: #fff
+    .upaKV td,
+    .upaKV th {
+        background-color: #141414!important
+    }
+    .fDevHB,
+    .icJRWX {
+        color: #c6c6c6
+    }
 }
