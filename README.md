@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src="https://github.com/iarlo/NPM-Dark/blob/master/preview/logo.png" /></div>
+<div style="text-align:center"><img src="https://github.com/iarlo/NPM-Dark/blob/main/preview/logo.png" /></div>
 <div style="text-align:center">The best dark theme for the NPM</div>
 
 Inspired by [Github Dark](https://github.com/StylishThemes/GitHub-Dark)
@@ -10,6 +10,6 @@ Inspired by [Github Dark](https://github.com/StylishThemes/GitHub-Dark)
 
 ## Preview
 
-![alt Preview 1](https://github.com/iarlo/NPM-Dark/blob/master/preview/npm-dark.png "Preview 1")
+![alt Preview 1](https://github.com/iarlo/NPM-Dark/blob/main/preview/npm-dark.png "Preview 1")
 #
 
