@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           NPM Dark
 @namespace      github.com/iarlo
-@version        3.1.0
+@version        3.1.1
 @license     MIT
 @homepageURL https://github.com/iarlo/NPM-Dark
 @author         Bruno Sá (@iarlo)
@@ -75,7 +75,11 @@
     strong {
         background-color: transparent!important
     }
-
+    .hover-black:focus,
+    .hover-black:hover,
+    .white {
+        color: var(--primary) !important;
+    }
     ._0b9b6c57 a,
     ._0edb515f,
     ._390acbc5,
@@ -98,7 +102,10 @@
     [role=tabpanel] button,
     body,
     h2,
-    ._31dfe8f0 a {
+    ._31dfe8f0 a,
+    .f4477a62,
+    .hover-black-80:focus,
+    .hover-black-80:hover {
         color: var(--secundary) !important;
     }
     pre {
@@ -184,8 +191,9 @@
     ._75ce47e7 {
         background-color: var(--background)
     }
-    ._0da775bb {
-        background-color: var(--second-card)
+    ._0da775bb,
+    #main > div > section > div > div > button._53b86379._79c95847.c1229923 {
+        background-color: var(--second-card)!important;
     }
     .markdown code,
     .markdown pre > *,
@@ -352,7 +360,8 @@
         stroke: rgba(var(--brand-color));
         fill: rgba(var(--brand-color), 0.3)
     }
-    .black-80 {
+    .black-80,
+    a {
         color: var(--secundary)
     }
     .cfZKRM,
