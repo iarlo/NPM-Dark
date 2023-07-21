@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           NPM Dark
 @namespace      github.com/iarlo
-@version        3.0.0
+@version        3.1.1
 @license     MIT
 @homepageURL https://github.com/iarlo/NPM-Dark
 @author         Bruno Sá (@iarlo)
@@ -75,7 +75,11 @@
     strong {
         background-color: transparent!important
     }
-    ,
+    .hover-black:focus,
+    .hover-black:hover,
+    .white {
+        color: var(--primary) !important;
+    }
     ._0b9b6c57 a,
     ._0edb515f,
     ._390acbc5,
@@ -97,11 +101,28 @@
     .dib.fr.mt2 a,
     [role=tabpanel] button,
     body,
-    h2 {
-        color: var(--secundary)!important
+    h2,
+    ._31dfe8f0 a,
+    .f4477a62,
+    .hover-black-80:focus,
+    .hover-black-80:hover {
+        color: var(--secundary) !important;
     }
     pre {
         margin: 1em 0!important
+    }
+    .black-60 {
+        color: rgba(255, 255, 255, .6);
+        !important
+    }
+    .black-70 {
+        color: rgba(255, 255, 255, .7);
+        !important
+    }
+    .black-90,
+    ._89d0b3e5 {
+        color: rgba(255, 255, 255, .9);
+        !important
     }
     .black,
     .fDilpz.active,
@@ -162,15 +183,17 @@
         border-bottom: var(--border)
     }
     .d767adf4 span,
-    .dde91b96 {
+    .dde91b96,
+    ._26391339 a {
         border: var(--border)!important
     }
     ._2f299eeb,
     ._75ce47e7 {
         background-color: var(--background)
     }
-    ._0da775bb {
-        background-color: var(--second-card)
+    ._0da775bb,
+    #main > div > section > div > div > button._53b86379._79c95847.c1229923 {
+        background-color: var(--second-card)!important;
     }
     .markdown code,
     .markdown pre > *,
@@ -337,7 +360,8 @@
         stroke: rgba(var(--brand-color));
         fill: rgba(var(--brand-color), 0.3)
     }
-    .black-80 {
+    .black-80,
+    a {
         color: var(--secundary)
     }
     .cfZKRM,
